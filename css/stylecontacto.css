@@ -74,10 +74,121 @@ ul {
     margin-top: 10%;
 }
 
-img {
-    width: 5%;
+img{
+    width: 150%;
+    border-radius: 10px;
+}
 
-}
-.container{
-    white-space: 55px;
-}
+/*form*/
+
+  .form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+    margin-top: 5%;
+  }
+  
+  .form .title {
+    color: #3C5066;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color:#3C5066;
+    color: #fff;
+    cursor: pointer;
+  }
+      
+
+  /*redes sociales*/
+  .container {
+    position: relative;
+    width: 250px;
+    margin-top: 20%;
+   /*  choose your size */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .container button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #313638;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+  }
+  
+  .container button:nth-child(1):hover {
+    background-color: #2753a7;
+  }
+  
+  .container button:nth-child(2):hover {
+    background-color: #cd242b;
+  }
+  
+  .container button:nth-child(3):hover {
+    background-color: #55acee;
+  }
+  
+  .container button:nth-child(4):hover {
+    background-color: #0274b3;
+  }
+  
+  .title {
+    color: gray;
+    font-weight: 700;
+    font-size: 17px;
+    position: absolute;
+    top: -35px;
+    left: 0;
+  }
+
+  
