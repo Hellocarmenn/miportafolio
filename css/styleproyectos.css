@@ -29,10 +29,7 @@ button {
     height: 40px;
     border-color: #3C5066;
     margin-top: 8%;
-
-
 }
-
 .button2 {
     background-color: white;
     color: #3C5066;
@@ -52,18 +49,7 @@ button {
     background-color: #3C5066;
 }
 
-.footer {
-    margin-top: 5%;
-    grid-area: footer;
-    background-color:#1F1F1F;
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-    height: 90px;
-}
+
 
 h2{
     font-size: 16px;
@@ -94,4 +80,16 @@ img{
 h3{
   font-size: 40px;
   color: #3C5066;
+}
+
+.footer {
+    margin-top: 5%;
+    background-color:#1F1F1F;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    height: 90px;
 }

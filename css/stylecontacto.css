@@ -16,23 +16,16 @@ body {
 
 }
 
-.navbar-toggle {
-    background-color: #3C5066;
-    border-color: white;
+.productos{
+    grid-area: produc;
+  
 }
 
-.navbar-toggle .icon-bar,
-span {
-    color: white;
+.publicidad{
+    grid-area: publi;
 }
-
-.nav {
-    background-color: #3C5066;
-}
-
-.footer {
-    margin-top: 5%;
-    grid-area: footer;
+footer{
+    grid-area: pie;
     background-color: #1F1F1F;
     color: white;
     font-size: 2.5rem;
@@ -41,47 +34,76 @@ span {
     text-transform: uppercase;
     font-size: 16px;
     height: 90px;
+} 
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:  auto auto ;
+    grid-template-areas: 
+    "nav  nav"
+    "produc publi"
+    "produc publi"
+    "pie   pie";
+    gap: 10%;
+
+    
 }
 
-h1,
-h2 {
-    font-size: 25px;
-    color: black;
-
-}
-
-h3 {
+button {
+    background-color: #3C5066;
+    color: white;
     font-size: 16px;
+    text-align: center;
+    width: 35%;
+    height: 40px;
+    border-color: #3C5066;
+    margin-top: 8%;
+}
+
+
+.navbar-toggle{
+    background-color: #3C5066;
+    border-color: white;
+}
+.navbar-toggle  .icon-bar,span{
     color: white;
 }
+.nav{
+    background-color: #3C5066;
+}
 
-.navbar {
+h2,h3{
+    font-size: 16px;
+    color:white;
+
+}
+
+.navbar{
     background-color: #3C5066;
     font-size: 25px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     height: 60px;
 
 }
-
-a,
-ul {
-    color: white;
+ a,ul{
+    color:white;
     font-size: 13px;
 
-}
-
-.directorio {
-    margin-top: 10%;
-}
-
+ }
 img{
-    width: 150%;
-    border-radius: 10px;
+  border-radius: 10px;
+  padding: 30px;
 }
+.texto-ui,.texto-cine{
+  margin-top: 20%;
+  text-align: center;
+}
+
 
 /*form*/
 
-  .form {
+.form {
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -91,8 +113,6 @@ img{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
-    margin-top: 5%;
   }
   
   .form .title {
@@ -100,7 +120,7 @@ img{
     font-size: 30px;
     font-weight: 600;
     letter-spacing: -1px;
-    line-height: 30px;
+    line-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,13 +158,12 @@ img{
     color: #fff;
     cursor: pointer;
   }
-      
 
   /*redes sociales*/
   .container {
     position: relative;
     width: 250px;
-    margin-top: 20%;
+    margin-top: 10%;
    /*  choose your size */
     display: flex;
     flex-wrap: wrap;
@@ -181,14 +200,23 @@ img{
   .container button:nth-child(4):hover {
     background-color: #0274b3;
   }
+  @media(max-width:480px){
+    .contenedor{
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows:  auto auto auto auto ;
+      grid-template-areas: 
+      "nav  "
+      "produc "
+      "publi "
+      "pie   ";
+      gap: 10%;
   
-  .title {
-    color: gray;
-    font-weight: 700;
-    font-size: 17px;
-    position: absolute;
-    top: -35px;
-    left: 0;
+      
   }
+  }
+  
+
 
   
+      
