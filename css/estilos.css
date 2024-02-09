@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: font;
+  min-height: 100%; }
+
+/*# sourceMappingURL=estilos.css.map */
