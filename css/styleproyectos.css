@@ -16,9 +16,7 @@ body {
 
 }
 
-.carmen {
-    width: 100%;
-}
+
 
 button {
     background-color: #3C5066;
@@ -73,10 +71,7 @@ img{
   margin-top: 20%;
   border-radius: 10px;
 }
-.texto-ui,.texto-cine{
-  margin-top: 20%;
-  text-align: center;
-}
+
 h3{
   font-size: 40px;
   color: #3C5066;
@@ -86,7 +81,6 @@ h3{
     margin-top: 5%;
     background-color:#1F1F1F;
     color: white;
-    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;

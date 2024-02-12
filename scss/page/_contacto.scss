@@ -1,0 +1,132 @@
+/*Contactos*/
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "nav  nav"
+        "produc publi"
+        "produc publi"
+        "pie   pie";
+    gap: 10%;
+
+    .productos {
+        grid-area: produc;
+    }
+
+    .publicidad {
+        grid-area: publi;
+
+        .form {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            .title {
+                color: #3C5066;
+                font-size: 30px;
+                font-weight: 600;
+                letter-spacing: -1px;
+                line-height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            input {
+                outline: 0;
+                border: 1px solid rgb(219, 213, 213);
+                padding: 8px 14px;
+                border-radius: 8px;
+                width: 100%;
+                height: 50px;
+            }
+
+            textarea {
+                border-radius: 8px;
+                height: 100px;
+                width: 100%;
+                resize: none;
+                outline: 0;
+                padding: 8px 14px;
+                border: 1px solid rgb(219, 213, 213);
+            }
+
+            button {
+                align-self: flex-end;
+                padding: 8px;
+                outline: 0;
+                border: 0;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 500;
+                background-color: #3C5066;
+                color: #fff;
+                cursor: pointer;
+            }
+
+
+        }
+    }
+
+    .container {
+        position: relative;
+        width: 250px;
+        margin-top: 10%;
+        /*  choose your size */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            background-color: #313638;
+            transition: 0.3s;
+            cursor: pointer;
+
+            .icon {
+                width: 26px;
+                height: 26px;
+                fill: #fff;
+            }
+
+            .container button:nth-child(1):hover {
+                background-color: #2753a7;
+            }
+
+            .container button:nth-child(2):hover {
+                background-color: #cd242b;
+            }
+
+            .container button:nth-child(3):hover {
+                background-color: #55acee;
+            }
+
+            .container button:nth-child(4):hover {
+                background-color: #0274b3;
+            }
+        }
+    }
+    footer{
+        grid-area: pie;
+        background-color: #1F1F1F;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        height: 90px;
+    } 
+
+}

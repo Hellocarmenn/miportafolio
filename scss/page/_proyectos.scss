@@ -1,0 +1,38 @@
+/*Proyectos*/
+
+section {
+    figure {
+        img {
+            margin-top: 20%;
+            border-radius: 10px;
+        }
+    }
+
+    article {
+        margin-top: 10%;
+
+        h3 {
+            font-size: 30px;
+            color: #3C5066;
+        }
+
+        button {
+            background-color: #3C5066;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            width: 35%;
+            height: 40px;
+            border-color: #3C5066;
+            margin-top: 8%;
+            a{
+                color: white;
+            }
+            a:hover{
+                color: white;
+                background: pink;
+            }
+        }
+
+    }
+}

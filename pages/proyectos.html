@@ -7,39 +7,65 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/styleproyectos.css">
+    <!--Codigo css
+        <link rel="stylesheet" href="../css/styleproyectos.css">
+
+    -->
+    <!--Codigo con sass -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
 </head>
 
 <body>
-
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="glyphicon glyphicon-menu-hamburger	
+    <header>
+        <nav class="navbar navbar-fixed-top mia">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-menu-hamburger	
                     "></span>
-                </button>
-                <a class="navbar-brand" href="#">Carmen Martinez</a>
+                    </button>
+                    <a class="navbar-brand" href="#">Carmen Martinez</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="proyectos.html">Portafolio</a></li>
+                        <li><a href="./certificaciones.html">Certificaciones</a></li>
+                        <li><a href="./contacto.html">Contacto</a>
+                        <li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="proyectos.html">Portafolio</a></li>
-                    <li><a href="./certificaciones.html">Certificaciones</a></li>
-                    <li><a href="./contacto.html">Contacto</a>
-                    <li>
-                </ul>
+        </nav>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Carmen Martinez</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="proyectos.html">Portafolio</a></li>
+                        <li><a href="./certificaciones.html">Certificaciones</a></li>
+                        <li><a href="./contacto.html">Contacto</a>
+                        <li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-            </div>
-        </div>
-    </nav>
     <section class="col-sm-12">
         <figure class="col-sm-6">
             <img src="../img/diez.png" class=" img-responsive " alt="miFoto">
         </figure>
         <article class="texto-ui col-sm-6">
             <h3>Kitty House App Movil<br>Diseño UI UX</h3>
-            <a href="../pages/appmovil.html"><button>Ver mas</button></a>
+            <button><a href="../pages/appmovil.html">Ver mas</a></button>
 
         </article>
 
@@ -54,8 +80,8 @@
             <img src="../img/cinepolis.png" class=" img-responsive " alt="miFoto">
         </figure>
     </section>
-   
-   
+
+
 </body>
 <footer class=" footer col-sm-12">
     <h2>© 2024 Copyright:</h2>

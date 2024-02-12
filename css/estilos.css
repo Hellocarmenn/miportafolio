@@ -11,9 +11,9 @@ header button {
 
 /*Footer*/
 footer {
+  margin-top: 5%;
   background-color: #1F1F1F;
   color: white;
-  font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
   height: 90px; }
@@ -85,13 +85,14 @@ section .biografia p {
   margin: 0; }
 section .biografia button {
   background-color: #3C5066;
-  color: white;
   font-size: 16px;
   text-align: center;
   width: 35%;
   height: 40px;
   border-color: #3C5066;
   margin-top: 8%; }
+  section .biografia button a {
+    color: white; }
 section .biografia .button2 {
   background-color: white;
   color: #3C5066;
@@ -283,7 +284,135 @@ section .biografia .button2 {
               transform: translateX(-50%) rotate(45deg); }
 
 .dev img {
-  width: 100%;
-  margin-top: 30%; }
+  width: 90%;
+  margin-top: 10%; }
+
+/*Contactos*/
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "nav  nav" "produc publi" "produc publi" "pie   pie";
+  gap: 10%; }
+  .contenedor .productos {
+    grid-area: produc; }
+  .contenedor .publicidad {
+    grid-area: publi; }
+    .contenedor .publicidad .form {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px; }
+      .contenedor .publicidad .form .title {
+        color: #3C5066;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; }
+      .contenedor .publicidad .form input {
+        outline: 0;
+        border: 1px solid #dbd5d5;
+        padding: 8px 14px;
+        border-radius: 8px;
+        width: 100%;
+        height: 50px; }
+      .contenedor .publicidad .form textarea {
+        border-radius: 8px;
+        height: 100px;
+        width: 100%;
+        resize: none;
+        outline: 0;
+        padding: 8px 14px;
+        border: 1px solid #dbd5d5; }
+      .contenedor .publicidad .form button {
+        align-self: flex-end;
+        padding: 8px;
+        outline: 0;
+        border: 0;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #3C5066;
+        color: #fff;
+        cursor: pointer; }
+  .contenedor .container {
+    position: relative;
+    width: 250px;
+    margin-top: 10%;
+    /*  choose your size */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; }
+    .contenedor .container button {
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: #313638;
+      transition: 0.3s;
+      cursor: pointer; }
+      .contenedor .container button .icon {
+        width: 26px;
+        height: 26px;
+        fill: #fff; }
+      .contenedor .container button .container button:nth-child(1):hover {
+        background-color: #2753a7; }
+      .contenedor .container button .container button:nth-child(2):hover {
+        background-color: #cd242b; }
+      .contenedor .container button .container button:nth-child(3):hover {
+        background-color: #55acee; }
+      .contenedor .container button .container button:nth-child(4):hover {
+        background-color: #0274b3; }
+  .contenedor footer {
+    grid-area: pie;
+    background-color: #1F1F1F;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    height: 90px; }
+
+/*Proyectos*/
+section figure img {
+  margin-top: 20%;
+  border-radius: 10px; }
+section article {
+  margin-top: 10%; }
+  section article h3 {
+    font-size: 30px;
+    color: #3C5066; }
+  section article button {
+    background-color: #3C5066;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 35%;
+    height: 40px;
+    border-color: #3C5066;
+    margin-top: 8%; }
+    section article button a {
+      color: white; }
+    section article button a:hover {
+      color: white;
+      background: pink; }
+
+/*MediaQ*/
+@media only screen and (max-width: 480px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "nav  " "produc " "publi " "pie   ";
+    gap: 10%; } }
 
 /*# sourceMappingURL=estilos.css.map */
