@@ -296,6 +296,8 @@ section .biografia .button2 {
   gap: 10%; }
   .contenedor .productos {
     grid-area: produc; }
+    .contenedor .productos img {
+      width: 100%; }
   .contenedor .publicidad {
     grid-area: publi; }
     .contenedor .publicidad .form {
