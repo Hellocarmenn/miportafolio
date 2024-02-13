@@ -1,5 +1,6 @@
 /*Contactos*/
-
+@import "generales/variables";
+@import "generales/mediaQ";
 .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,12 +26,12 @@
             flex-direction: column;
             gap: 10px;
             width: 100%;
-            background-color: white;
+            background-color: $white;
             padding: 20px;
             border-radius: 10px;
 
             .title {
-                color: #3C5066;
+                color: $blue;
                 font-size: 30px;
                 font-weight: 600;
                 letter-spacing: -1px;
@@ -68,8 +69,8 @@
                 border-radius: 8px;
                 font-size: 16px;
                 font-weight: 500;
-                background-color: #3C5066;
-                color: #fff;
+                background-color: $blue;
+                color: $white;
                 cursor: pointer;
             }
 
@@ -90,7 +91,7 @@
             width: 50px;
             height: 50px;
             border: none;
-            background-color: #313638;
+            background-color: $blue;
             transition: 0.3s;
             cursor: pointer;
 

@@ -1,3 +1,12 @@
 $font:'Helvetica', 'Arial', sans-serif;
-$azul:#3C5066;
-$blanco:#ffffff;
+$blue:#3C5066;
+$white:#ffffff;
+$black:#000000;
+
+//mixin 
+@mixin flex($direccion,$justify,$alig){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $alig;
+}

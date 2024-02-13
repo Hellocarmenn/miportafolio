@@ -1,4 +1,6 @@
+@import "generales/variables";
 @import "generales/headerFooter";
+
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
 
 * {
@@ -12,7 +14,7 @@ html {
 }
 
 body {
-    font-family:font;
+    font-family:$font;
     min-height: 100%;
 
 }
@@ -20,5 +22,4 @@ body {
 @import "page/index";
 @import "page/contacto";
 @import "page/proyectos";
-
 @import "generales/mediaQ";
