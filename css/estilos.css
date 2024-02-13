@@ -288,15 +288,6 @@ section .biografia .button2 {
   margin-top: 10%; }
 
 /*Contactos*/
-/*MediaQ*/
-@media (max-width: 480px) {
-  .contenedor .contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "nav  " "produc " "publi " "pie   ";
-    gap: 10%; } }
-
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -417,7 +408,7 @@ section article {
 
 /*MediaQ*/
 @media (max-width: 480px) {
-  .contenedor .contenedor {
+  .contenedor {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;

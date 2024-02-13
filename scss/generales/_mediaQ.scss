@@ -1,20 +1,17 @@
 /*MediaQ*/
 
 
-.contenedor{
-    @media(max-width:480px){
-        .contenedor{
-          display: grid;
-          grid-template-columns: 1fr ;
-          grid-template-rows:  auto auto auto auto ;
-          grid-template-areas: 
-          "nav  "
-          "produc "
-          "publi "
-          "pie   ";
-          gap: 10%;
-      
-          
-      }
-      }
+
+@media(max-width:480px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "nav  "
+            "produc "
+            "publi "
+            "pie   ";
+        gap: 10%;
+    }
 }
