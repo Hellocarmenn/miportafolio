@@ -55,6 +55,27 @@ section .biografia .contenedor {
   left: 0;
   margin: auto;
   overflow: hidden; }
+  section .biografia .contenedor p {
+    color: coral;
+    font-size: 4 rem;
+    /*nombre*/
+    animation-name: efecto;
+    /*veces que se repite*/
+    animation-iteration-count: 2;
+    /*Duracion de cada vuelta*/
+    animation-duration: 5s;
+    animation-delay: 2; }
+@keyframes efecto {
+  0% {
+    color: coral; }
+  25% {
+    color: #69bff8; }
+  50% {
+    color: #d16ba5; }
+  75% {
+    color: orangered; }
+  100% {
+    color: coral; } }
 @keyframes cambiar {
   0% {
     margin-top: 0; }
@@ -81,8 +102,9 @@ section .biografia .contenedor {
     section .biografia .contenedor ul li {
       color: #3C5066;
       font-size: 40px; }
-section .biografia p {
-  margin: 0; }
+section .biografia .bio {
+  margin-top: 25px;
+  text-align: justify; }
 section .biografia button {
   background-color: #3C5066;
   font-size: 16px;
@@ -401,7 +423,8 @@ section article {
     width: 35%;
     height: 40px;
     border-color: #3C5066;
-    margin-top: 8%; }
+    margin-top: 8%;
+    transform: rotate(360deg); }
     section article button a {
       color: #ffffff; }
     section article button a:hover {

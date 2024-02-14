@@ -12,11 +12,53 @@ section {
     .fotoPerfil {
         .carmen {
             width: 100%;
+
+
         }
+
     }
 
     .biografia {
         .contenedor {
+
+            p {
+                color: coral;
+                font-size: 4 rem;
+                /*nombre*/
+                animation-name: efecto;
+                /*veces que se repite*/
+                animation-iteration-count: 2;
+                /*Duracion de cada vuelta*/
+                animation-duration: 5s;
+                animation-delay: 2;
+
+            }
+
+            @keyframes efecto {
+                0% {
+                    color: coral;
+
+                }
+
+                25% {
+                    color: #69bff8
+                }
+
+                50% {
+                    color: #d16ba5;
+                }
+
+                75% {
+                    color:orangered;
+                }
+
+                100% {
+                    color: coral;
+                }
+
+            }
+
+
             @keyframes cambiar {
 
                 0% {
@@ -90,20 +132,24 @@ section {
 
         }
 
-        p {
-            margin: 0;
+        .bio {
+            margin-top: 25px;
+            text-align: justify;
+            
+
         }
 
         button {
-            background-color:$blue;
+            background-color: $blue;
             font-size: 16px;
             text-align: center;
             width: 35%;
             height: 40px;
             border-color: $blue;
             margin-top: 8%;
-            a{
-                color:$white;
+
+            a {
+                color: $white;
             }
         }
 
@@ -156,6 +202,7 @@ section {
 
             span {
                 color: $blue ;
+
                 .side {
                     position: absolute;
                     height: 47px;
@@ -334,6 +381,7 @@ section {
                         /*progreso de las diferentes lenguajes*/
                         width: 30%;
                         animation-delay: 0.3s;
+
                         .tooltip {
                             position: absolute;
                             right: -14px;
@@ -367,10 +415,11 @@ section {
         }
     }
 }
-.dev{
-    img{
-        
-            width: 90%;
-            margin-top: 10%;
+
+.dev {
+    img {
+
+        width: 90%;
+        margin-top: 10%;
     }
 }
