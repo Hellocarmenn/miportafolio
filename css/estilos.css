@@ -395,16 +395,6 @@ section .biografia .button2 {
         background-color: #55acee; }
       .contenedor .container button .container button:nth-child(4):hover {
         background-color: #0274b3; }
-  .contenedor footer {
-    grid-area: pie;
-    background-color: #1F1F1F;
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-    height: 90px; }
 
 /*Proyectos*/
 section figure img {
@@ -412,7 +402,7 @@ section figure img {
   border-radius: 10px; }
 section article {
   margin-top: 10%; }
-  section article h3 {
+  section article em {
     font-size: 30px;
     color: #3C5066; }
   section article button {
@@ -438,6 +428,9 @@ section article {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "nav  " "produc " "publi " "pie   ";
-    gap: 10%; } }
+    gap: 10%; }
+
+  h2 {
+    margin-top: 15px; } }
 
 /*# sourceMappingURL=estilos.css.map */
