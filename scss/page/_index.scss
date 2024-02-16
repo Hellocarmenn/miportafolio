@@ -172,13 +172,13 @@ section {
 
 
         .button2 {
-            background-color:  lightcoral;
+            background-color: lightcoral;
             border: none;
             padding: 1rem;
             font-size: 1rem;
             width: 40%;
             border-radius: 1rem;
-            color:$white;
+            color: $white;
             box-shadow: 0 0.4rem #dfd9d9;
             height: 45px;
             font-size: 10px;
@@ -206,30 +206,25 @@ section {
 
 section {
     .skills {
+       
 
-        @keyframes progress {
-            0% {
-                width: 0;
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
 
         position: relative;
-        max-width: 500px;
-        width: 100%;
+        max-width: 450px;
+        width: 90%;
         background: #ececec;
         margin: 0 15px;
         padding: 10px 20px;
         border-radius: 7px;
-        margin-top: 7%;
+        margin-top: 5%;
 
         .skill-box {
             width: 100%;
             margin: 25px 0;
+            title{
+                color: lightcoral;
+            }
+    
 
             .title {
                 display: block;
@@ -246,17 +241,32 @@ section {
                 background: rgba(0, 0, 0, 0.1);
 
                 .skill-per {
+
+                    @keyframes progress {
+                        0% {
+                            width: 0;
+                            opacity: 1;
+                        }
+
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+
                     position: relative;
                     display: block;
                     height: 100%;
                     width: 90%;
                     border-radius: 6px;
-                    background: #3C5066;
+                    background:lightcoral;
                     ;
                     animation: progress 0.4s ease-in-out forwards;
                     opacity: 0;
 
+
+
                     .html {
+
                         /*progreso de las diferentes lenguajes*/
                         width: 50%;
                         animation-delay: 0.1s;
@@ -292,17 +302,19 @@ section {
                         width: 70%;
                         animation-delay: 0.1s;
 
-                        .tooltip {
-                            position: absolute;
-                            right: -14px;
-                            top: -28px;
-                            font-size: 9px;
-                            font-weight: 500;
-                            color: #fff;
-                            padding: 2px 6px;
-                            border-radius: 3px;
-                            background: #4070f4;
-                            z-index: 1;
+                        span {
+                            .tooltip {
+                                position: absolute;
+                                right: -14px;
+                                top: -28px;
+                                font-size: 9px;
+                                font-weight: 500;
+                                color: #fff;
+                                padding: 2px 6px;
+                                border-radius: 3px;
+                                background: #4070f4;
+                                z-index: 1;
+                            }
 
                             .tooltip::before {
                                 content: '';

@@ -155,22 +155,18 @@ section .biografia .button2:hover:not(:disabled) {
 
 section .skills {
   position: relative;
-  max-width: 500px;
-  width: 100%;
+  max-width: 450px;
+  width: 90%;
   background: #ececec;
   margin: 0 15px;
   padding: 10px 20px;
   border-radius: 7px;
-  margin-top: 7%; }
-@keyframes progress {
-  0% {
-    width: 0;
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
+  margin-top: 5%; }
   section .skills .skill-box {
     width: 100%;
     margin: 25px 0; }
+    section .skills .skill-box title {
+      color: lightcoral; }
     section .skills .skill-box .title {
       display: block;
       font-size: 14px;
@@ -188,9 +184,15 @@ section .skills {
         height: 100%;
         width: 90%;
         border-radius: 6px;
-        background: #3C5066;
+        background: lightcoral;
         animation: progress 0.4s ease-in-out forwards;
         opacity: 0; }
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
         section .skills .skill-box .skill-bar .skill-per .html {
           /*progreso de las diferentes lenguajes*/
           width: 50%;
@@ -220,7 +222,7 @@ section .skills {
           /*progreso de las diferentes lenguajes*/
           width: 70%;
           animation-delay: 0.1s; }
-          section .skills .skill-box .skill-bar .skill-per .css .tooltip {
+          section .skills .skill-box .skill-bar .skill-per .css span .tooltip {
             position: absolute;
             right: -14px;
             top: -28px;
@@ -231,16 +233,16 @@ section .skills {
             border-radius: 3px;
             background: #4070f4;
             z-index: 1; }
-            section .skills .skill-box .skill-bar .skill-per .css .tooltip .tooltip::before {
-              content: '';
-              position: absolute;
-              left: 50%;
-              bottom: -2px;
-              height: 10px;
-              width: 10px;
-              z-index: -1;
-              background-color: #4070f4;
-              transform: translateX(-50%) rotate(45deg); }
+          section .skills .skill-box .skill-bar .skill-per .css span .tooltip::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -2px;
+            height: 10px;
+            width: 10px;
+            z-index: -1;
+            background-color: #4070f4;
+            transform: translateX(-50%) rotate(45deg); }
         section .skills .skill-box .skill-bar .skill-per .javascript {
           /*progreso de las diferentes lenguajes*/
           width: 50%;
