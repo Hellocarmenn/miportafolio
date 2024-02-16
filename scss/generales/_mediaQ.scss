@@ -2,6 +2,15 @@
 
 
     @media(max-width:480px) {
+
+        body {
+        figure{
+            .barner{
+                margin-top: 15%;
+            }
+        }
+        }
+
         .contenedor {
             display: grid;
             grid-template-columns: 1fr;
@@ -15,8 +24,4 @@
 
 
         }
-        h2{
-            margin-top: 15px;
-        }
-       
     }

@@ -150,90 +150,41 @@ section {
 
             a {
                 color: $white;
+                 
+            }
+        }
+        button:hover{
+            background-color:white;
+            border-color:coral;
+            a{
+                color: coral;
             }
         }
 
         .button2 {
             background-color: $white;
-            color: $blue;
             border-color: $blue;
             text-align: center;
             text-decoration: none;
             outline: none;
+            color: $blue;
+           
+        }
+
+        .button2:hover{
+            background-color:coral;
+            border-color:coral;
+            color: white;
+
+           
         }
     }
 }
 
-.skills {
-    .button-icon {
-        margin-top: 10%;
-        display: flex;
-        border: 3px $white solid;
-        width: fit-content;
-        height: fit-content;
-        cursor: pointer;
 
-        .button-icon:hover .cube {
-            transform: rotateX(90deg);
-        }
+    
 
-        .button-icon:hover {
-            border-color: $blue;
-            ;
-        }
-
-
-        .icon {
-            background-color: $white;
-            padding: 10px 10px 5px 10px;
-
-            svg {
-                width: 25px;
-                height: 25px;
-            }
-
-        }
-
-        .cube {
-            transition: all 0.4s;
-            transform-style: preserve-3d;
-            width: 200px;
-            height: 20px;
-
-            span {
-                color: $blue ;
-
-                .side {
-                    position: absolute;
-                    height: 47px;
-                    width: 200px;
-                    display: flex;
-                    font-size: 0.8em;
-                    justify-content: center;
-                    align-items: center;
-                    text-transform: uppercase;
-                    letter-spacing: 0.5px;
-                    font-weight: bold;
-
-                    .top {
-                        background: $blue;
-                        ;
-                        color: $white;
-                        transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
-                    }
-
-                    .front {
-                        background: #222229;
-                        color: $white;
-                        transform: translate3d(0, 0, 1em);
-                    }
-                }
-            }
-
-        }
-    }
-
-    .container {
+    .skills {
 
         @keyframes progress {
             0% {
@@ -414,12 +365,12 @@ section {
             }
         }
     }
-}
+
 
 .dev {
     img {
 
-        width: 90%;
+        width: 100%;
         margin-top: 10%;
     }
 }
