@@ -450,13 +450,46 @@ section article {
     color: lightcoral;
     text-shadow: 0 0.1rem #bcb4b4; }
 
+/*prototipo app*/
+/*Header*/
+header .navbar-header .navbar-brand {
+  color: #ffffff; }
+header .mia {
+  background-color: #3C5066; }
+header ul li a {
+  color: #ffffff; }
+header button {
+  color: #ffffff; }
+
+/*Footer*/
+footer {
+  margin-top: 5%;
+  background-color: #1F1F1F;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  height: 90px; }
+  footer h2 {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+    padding-top: 5px; }
+
+main iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 650px;
+  margin-top: 10%; }
+
 /*MediaQ*/
 @media (max-width: 480px) {
   body figure .barner {
     margin-top: 15%; }
 
   iframe {
-    height: 2000px; }
+    height: 350px;
+    margin-top: 5%; }
 
   .contenedor {
     display: grid;
