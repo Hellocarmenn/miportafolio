@@ -49,7 +49,7 @@ section {
                 }
 
                 75% {
-                    color:orangered;
+                    color: orangered;
                 }
 
                 100% {
@@ -135,55 +135,76 @@ section {
         .bio {
             margin-top: 25px;
             text-align: justify;
-            
+
 
         }
 
         button {
-            background-color: $blue;
-            font-size: 16px;
-            text-align: center;
-            width: 35%;
-            height: 40px;
-            border-color: $blue;
-            margin-top: 8%;
+            background-color: #eee;
+            border: none;
+            padding: 1rem;
+            font-size: 1rem;
+            width: 20em;
+            border-radius: 1rem;
+            color: lightcoral;
+            box-shadow: 0 0.4rem #dfd9d9;
+            height: 45px;
+            font-size: 10px;
+            cursor: pointer;
 
-            a {
-                color: $white;
-                 
+            :disabled {
+                cursor: auto;
+                color: grey;
             }
         }
-        button:hover{
-            background-color:white;
-            border-color:coral;
-            a{
-                color: coral;
-            }
+
+        button:active {
+            color: white;
+            box-shadow: 0 0.2rem #dfd9d9;
+            transform: translateY(0.2rem);
         }
+
+        button:hover:not(:disabled) {
+            background: lightcoral;
+            color: white;
+            text-shadow: 0 0.1rem #bcb4b4;
+        }
+
 
         .button2 {
-            background-color: $white;
-            border-color: $blue;
-            text-align: center;
-            text-decoration: none;
-            outline: none;
-            color: $blue;
-           
+            background-color:  lightcoral;
+            border: none;
+            padding: 1rem;
+            font-size: 1rem;
+            width: 20em;
+            border-radius: 1rem;
+            color:$white;
+            box-shadow: 0 0.4rem #dfd9d9;
+            height: 45px;
+            font-size: 10px;
+            cursor: pointer;
+
+            :disabled {
+                cursor: auto;
+                color: grey;
+            }
         }
 
-        .button2:hover{
-            background-color:coral;
-            border-color:coral;
+        .button2:active {
             color: white;
+            box-shadow: 0 0.2rem #dfd9d9;
+            transform: translateY(0.2rem);
+        }
 
-           
+        .button2:hover:not(:disabled) {
+            background-color: #eee;
+            color: lightcoral;
+            text-shadow: 0 0.1rem #bcb4b4;
         }
     }
 }
 
-
-    
-
+section {
     .skills {
 
         @keyframes progress {
@@ -367,10 +388,12 @@ section {
     }
 
 
-.dev {
-    img {
+    .dev {
+        img {
 
-        width: 100%;
-        margin-top: 10%;
+            width: 100%;
+            margin-top: 10%;
+        }
     }
+
 }

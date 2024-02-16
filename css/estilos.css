@@ -107,33 +107,53 @@ section .biografia .bio {
   margin-top: 25px;
   text-align: justify; }
 section .biografia button {
-  background-color: #3C5066;
-  font-size: 16px;
-  text-align: center;
-  width: 35%;
-  height: 40px;
-  border-color: #3C5066;
-  margin-top: 8%; }
-  section .biografia button a {
-    color: #ffffff; }
-section .biografia button:hover {
-  background-color: white;
-  border-color: coral; }
-  section .biografia button:hover a {
-    color: coral; }
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 20em;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  height: 45px;
+  font-size: 10px;
+  cursor: pointer; }
+  section .biografia button :disabled {
+    cursor: auto;
+    color: grey; }
+section .biografia button:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem); }
+section .biografia button:hover:not(:disabled) {
+  background: lightcoral;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4; }
 section .biografia .button2 {
-  background-color: #ffffff;
-  border-color: #3C5066;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #3C5066; }
-section .biografia .button2:hover {
-  background-color: coral;
-  border-color: coral;
-  color: white; }
+  background-color: lightcoral;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 20em;
+  border-radius: 1rem;
+  color: #ffffff;
+  box-shadow: 0 0.4rem #dfd9d9;
+  height: 45px;
+  font-size: 10px;
+  cursor: pointer; }
+  section .biografia .button2 :disabled {
+    cursor: auto;
+    color: grey; }
+section .biografia .button2:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem); }
+section .biografia .button2:hover:not(:disabled) {
+  background-color: #eee;
+  color: lightcoral;
+  text-shadow: 0 0.1rem #bcb4b4; }
 
-.skills {
+section .skills {
   position: relative;
   max-width: 500px;
   width: 100%;
@@ -148,21 +168,21 @@ section .biografia .button2:hover {
     opacity: 1; }
   100% {
     opacity: 1; } }
-  .skills .skill-box {
+  section .skills .skill-box {
     width: 100%;
     margin: 25px 0; }
-    .skills .skill-box .title {
+    section .skills .skill-box .title {
       display: block;
       font-size: 14px;
       font-weight: 600;
       color: #333; }
-    .skills .skill-box .skill-bar {
+    section .skills .skill-box .skill-bar {
       height: 8px;
       width: 100%;
       border-radius: 6px;
       margin-top: 6px;
       background: rgba(0, 0, 0, 0.1); }
-      .skills .skill-box .skill-bar .skill-per {
+      section .skills .skill-box .skill-bar .skill-per {
         position: relative;
         display: block;
         height: 100%;
@@ -171,11 +191,11 @@ section .biografia .button2:hover {
         background: #3C5066;
         animation: progress 0.4s ease-in-out forwards;
         opacity: 0; }
-        .skills .skill-box .skill-bar .skill-per .html {
+        section .skills .skill-box .skill-bar .skill-per .html {
           /*progreso de las diferentes lenguajes*/
           width: 50%;
           animation-delay: 0.1s; }
-          .skills .skill-box .skill-bar .skill-per .html .tooltip {
+          section .skills .skill-box .skill-bar .skill-per .html .tooltip {
             position: absolute;
             right: -14px;
             top: -28px;
@@ -186,7 +206,7 @@ section .biografia .button2:hover {
             border-radius: 3px;
             background: #4070f4;
             z-index: 1; }
-            .skills .skill-box .skill-bar .skill-per .html .tooltip .tooltip::before {
+            section .skills .skill-box .skill-bar .skill-per .html .tooltip .tooltip::before {
               content: '';
               position: absolute;
               left: 50%;
@@ -196,11 +216,11 @@ section .biografia .button2:hover {
               z-index: -1;
               background-color: #4070f4;
               transform: translateX(-50%) rotate(45deg); }
-        .skills .skill-box .skill-bar .skill-per .css {
+        section .skills .skill-box .skill-bar .skill-per .css {
           /*progreso de las diferentes lenguajes*/
           width: 70%;
           animation-delay: 0.1s; }
-          .skills .skill-box .skill-bar .skill-per .css .tooltip {
+          section .skills .skill-box .skill-bar .skill-per .css .tooltip {
             position: absolute;
             right: -14px;
             top: -28px;
@@ -211,7 +231,7 @@ section .biografia .button2:hover {
             border-radius: 3px;
             background: #4070f4;
             z-index: 1; }
-            .skills .skill-box .skill-bar .skill-per .css .tooltip .tooltip::before {
+            section .skills .skill-box .skill-bar .skill-per .css .tooltip .tooltip::before {
               content: '';
               position: absolute;
               left: 50%;
@@ -221,11 +241,11 @@ section .biografia .button2:hover {
               z-index: -1;
               background-color: #4070f4;
               transform: translateX(-50%) rotate(45deg); }
-        .skills .skill-box .skill-bar .skill-per .javascript {
+        section .skills .skill-box .skill-bar .skill-per .javascript {
           /*progreso de las diferentes lenguajes*/
           width: 50%;
           animation-delay: 0.2s; }
-          .skills .skill-box .skill-bar .skill-per .javascript .tooltip {
+          section .skills .skill-box .skill-bar .skill-per .javascript .tooltip {
             position: absolute;
             right: -14px;
             top: -28px;
@@ -236,7 +256,7 @@ section .biografia .button2:hover {
             border-radius: 3px;
             background: #4070f4;
             z-index: 1; }
-            .skills .skill-box .skill-bar .skill-per .javascript .tooltip .tooltip::before {
+            section .skills .skill-box .skill-bar .skill-per .javascript .tooltip .tooltip::before {
               content: '';
               position: absolute;
               left: 50%;
@@ -246,11 +266,11 @@ section .biografia .button2:hover {
               z-index: -1;
               background-color: #4070f4;
               transform: translateX(-50%) rotate(45deg); }
-        .skills .skill-box .skill-bar .skill-per .nodejs {
+        section .skills .skill-box .skill-bar .skill-per .nodejs {
           /*progreso de las diferentes lenguajes*/
           width: 30%;
           animation-delay: 0.3s; }
-          .skills .skill-box .skill-bar .skill-per .nodejs .tooltip {
+          section .skills .skill-box .skill-bar .skill-per .nodejs .tooltip {
             position: absolute;
             right: -14px;
             top: -28px;
@@ -261,7 +281,7 @@ section .biografia .button2:hover {
             border-radius: 3px;
             background: #4070f4;
             z-index: 1; }
-            .skills .skill-box .skill-bar .skill-per .nodejs .tooltip .tooltip::before {
+            section .skills .skill-box .skill-bar .skill-per .nodejs .tooltip .tooltip::before {
               content: '';
               position: absolute;
               left: 50%;
@@ -271,8 +291,7 @@ section .biografia .button2:hover {
               z-index: -1;
               background-color: #4070f4;
               transform: translateX(-50%) rotate(45deg); }
-
-.dev img {
+section .dev img {
   width: 100%;
   margin-top: 10%; }
 
