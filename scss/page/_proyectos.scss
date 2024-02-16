@@ -17,23 +17,65 @@ section {
         }
 
         button {
-            background-color: $blue;
-            color: $white;
+            background-color: #eee;
+            border: none;
+            padding: 1rem;
+            font-size: 1rem;
+            width: 50%;
+            border-radius: 1rem;
+            color: lightcoral;
+            box-shadow: 0 0.4rem #dfd9d9;
+            height: 45px;
             font-size: 16px;
-            text-align: center;
-            width: 35%;
-            height: 40px;
-            border-color: $blue;
-            margin-top: 8%;
-            transform: rotate(360deg);
-            a{
-                color:$white;
-            }
-            a:hover{
-                color: $white;
-                background: pink;
+            cursor: pointer;
+
+            :disabled {
+                cursor: auto;
+                color: grey;
             }
         }
 
+        button:active {
+            color: white;
+            box-shadow: 0 0.2rem #dfd9d9;
+            transform: translateY(0.2rem);
+        }
+
+        button:hover:not(:disabled) {
+            background: lightcoral;
+            color: white;
+            text-shadow: 0 0.1rem #bcb4b4;
+        }
+
+        .button2 {
+            background-color: lightcoral;
+            border: none;
+            padding: 1rem;
+            font-size: 1rem;
+            width: 40%;
+            border-radius: 1rem;
+            color: $white;
+            box-shadow: 0 0.4rem #dfd9d9;
+            height: 45px;
+            font-size: 16px;
+            cursor: pointer;
+
+            :disabled {
+                cursor: auto;
+                color: grey;
+            }
+        }
+
+        .button2:active {
+            color: white;
+            box-shadow: 0 0.2rem #dfd9d9;
+            transform: translateY(0.2rem);
+        }
+
+        .button2:hover:not(:disabled) {
+            background-color: #eee;
+            color: lightcoral;
+            text-shadow: 0 0.1rem #bcb4b4;
+        }
     }
 }
