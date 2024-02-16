@@ -58,7 +58,7 @@ section .biografia .contenedor {
   overflow: hidden; }
   section .biografia .contenedor p {
     color: coral;
-    font-size: 4 rem;
+    font-size: 26px;
     /*nombre*/
     animation-name: efecto;
     /*veces que se repite*/
@@ -111,7 +111,7 @@ section .biografia button {
   border: none;
   padding: 1rem;
   font-size: 1rem;
-  width: 20em;
+  width: 50%;
   border-radius: 1rem;
   color: lightcoral;
   box-shadow: 0 0.4rem #dfd9d9;
@@ -134,7 +134,7 @@ section .biografia .button2 {
   border: none;
   padding: 1rem;
   font-size: 1rem;
-  width: 20em;
+  width: 40%;
   border-radius: 1rem;
   color: #ffffff;
   box-shadow: 0 0.4rem #dfd9d9;
