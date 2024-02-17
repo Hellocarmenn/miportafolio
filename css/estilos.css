@@ -155,8 +155,8 @@ section .biografia .button2:hover:not(:disabled) {
 
 section .skills {
   position: relative;
-  max-width: 45%;
-  width: 100%;
+  max-width: 550px;
+  width: 90%;
   background: #ececec;
   margin: 0 15px;
   padding: 10px 20px;
@@ -295,9 +295,7 @@ section .skills {
               transform: translateX(-50%) rotate(45deg); }
 section .dev img {
   width: 100%;
-  margin-top: 10%;
-  align-content: center;
-  margin-right: 25px; }
+  margin-top: 10%; }
 
 /*Contacto*/
 .contenedor {
