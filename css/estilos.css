@@ -517,9 +517,9 @@ footer {
 
   .contenedor {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "nav  " "produc " "publi " "pie   ";
+    grid-template-areas: "nav nav " "produc " "publi ""produc " "publi " "pie   pie";
     gap: 10%; } }
 @media screen and (min-width: 768px) {
   body {
@@ -529,10 +529,6 @@ footer {
 
   main {
     flex: 1; }
-
-  footer {
-    margin-top: auto; }
-
   section .skills {
     max-width: 50%;
     width: 45%; }
@@ -561,12 +557,12 @@ main {
 
   .contenedor {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "nav  "
-                         "produc "
-                         "publi "
-                          "pie   ";
+    grid-template-areas: "nav "
+                         "produc  "
+                         "publi"
+                        "pie  ";
     gap: 10%; } }
 @media screen and (min-width: 768px) {
   body {
