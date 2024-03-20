@@ -136,6 +136,9 @@ section {
         .bio {
             margin-top: 25px;
             text-align: justify;
+            font-size: 28px;
+            justify-content: center;
+            text-align: justify;
 
 
         }
@@ -213,7 +216,7 @@ section {
         position: relative;
         max-width: 550px;
         width: 90%;
-        background: #ececec;
+        background: #f3f1f1;
         margin: 0 15px;
         padding: 10px 20px;
         border-radius: 7px;
@@ -404,8 +407,9 @@ section {
     .dev {
         img {
 
-            width: 100%;
-            margin-top: 10%;
+            width: 80%;
+            
+            padding: 1%;
         }
     }
 

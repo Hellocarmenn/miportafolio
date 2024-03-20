@@ -17,12 +17,12 @@ footer {
   text-align: center;
   text-transform: uppercase;
   height: 90px; }
-  
   footer p {
     font-size: 16px;
     color: white;
     font-weight: bold;
-    }
+    margin-top: 25px;
+    padding-top: 5px; }
 
 * {
   box-sizing: border-box;
@@ -48,15 +48,12 @@ body {
     height: 650px;
     margin-top: 5%; }
 
-    .contenedor {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto auto auto;
-      grid-template-areas: "nav  "
-                           "produc "
-                          "publi "
-                           "pie   ";
-      gap: 10%; } }
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "nav  " "produc " "publi " "pie   ";
+    gap: 10%; } }
 @media screen and (min-width: 768px) {
   body {
     display: flex;
@@ -66,6 +63,8 @@ body {
   main {
     flex: 1; }
 
+  footer {
+    margin-top: auto; }
 
   section .skills {
     max-width: 50%;
@@ -141,6 +140,9 @@ section .biografia .contenedor {
       font-size: 40px; }
 section .biografia .bio {
   margin-top: 25px;
+  text-align: justify;
+  font-size: 28px;
+  justify-content: center;
   text-align: justify; }
 section .biografia button {
   background-color: #eee;
@@ -193,7 +195,7 @@ section .skills {
   position: relative;
   max-width: 550px;
   width: 90%;
-  background: #ececec;
+  background: #f3f1f1;
   margin: 0 15px;
   padding: 10px 20px;
   border-radius: 7px;
@@ -330,16 +332,15 @@ section .skills {
               background-color: #4070f4;
               transform: translateX(-50%) rotate(45deg); }
 section .dev img {
-  width: 100%;
-  margin-top: 10%; }
+  width: 80%;
+  padding: 1%; }
 
 /*Contacto*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "nav  nav " 
-                       "produc publi" "pie   pie";
+  grid-template-rows: auto auto;
+  grid-template-areas: "nav  nav" "produc publi" "produc publi" "pie   pie";
   gap: 10%; }
   .contenedor .productos {
     grid-area: produc; }
@@ -490,7 +491,6 @@ header button {
 
 /*Footer*/
 footer {
-  grid-area: pie;
   margin-top: 5%;
   background-color: #1F1F1F;
   color: white;
@@ -517,9 +517,9 @@ footer {
 
   .contenedor {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "nav nav " "produc " "publi ""produc " "publi " "pie   pie";
+    grid-template-areas: "nav  " "produc " "publi " "pie   ";
     gap: 10%; } }
 @media screen and (min-width: 768px) {
   body {
@@ -529,6 +529,10 @@ footer {
 
   main {
     flex: 1; }
+
+  footer {
+    margin-top: auto; }
+
   section .skills {
     max-width: 50%;
     width: 45%; }
@@ -559,10 +563,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "nav "
-                         "produc  "
-                         "publi"
-                        "pie  ";
+    grid-template-areas: "nav  " "produc " "publi " "pie   ";
     gap: 10%; } }
 @media screen and (min-width: 768px) {
   body {
