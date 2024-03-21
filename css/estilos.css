@@ -339,8 +339,11 @@ section .dev img {
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "nav  nav" "produc publi" "produc publi" "pie   pie";
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "nav  nav" 
+                      "produc publi"  
+                      "produc publi"
+                       "pie   pie";
   gap: 10%; }
   .contenedor .productos {
     grid-area: produc; }
@@ -491,6 +494,7 @@ header button {
 
 /*Footer*/
 footer {
+  grid-area: pie;
   margin-top: 5%;
   background-color: #1F1F1F;
   color: white;
